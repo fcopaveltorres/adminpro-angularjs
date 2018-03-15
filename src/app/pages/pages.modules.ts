@@ -6,7 +6,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 
 // Modules
-import { SharedModules } from '../shared/shared.modules';
+import { SharedModule } from '../shared/shared.modules';
+import { PAGES_ROUTES } from './pages.routes';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { SharedModules } from '../shared/shared.modules';
         PagesComponent
     ],
     imports: [
-        SharedModules
+        SharedModule,
+        PAGES_ROUTES
     ]
 })
 export class PagesModule { }
