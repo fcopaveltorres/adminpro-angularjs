@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 // Rutas
 import { APP_ROUTES } from './app.routes';
 
+// Modulos
+import { PagesModule } from './pages/pages.modules';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -17,25 +19,24 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
 import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    RegisterComponent,
     NopagefoundComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Graficas1Component,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    PagesComponent,
-    RegisterComponent
+    // DashboardComponent,
+    // ProgressComponent,
+    // Graficas1Component,
+    // PagesComponent,
+    // HeaderComponent,
+    // SidebarComponent,
+    // BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
